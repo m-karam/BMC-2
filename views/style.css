@@ -1,0 +1,280 @@
+@import url('http://fonts.googleapis.com/css?family=Roboto:400,100,300,700');
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800');
+@import url('http://fonts.googleapis.com/css?family=Reenie+Beanie:regular');
+
+body, ul{margin: 0;padding: 0}
+a, input[type="submit"], input[type="button"]{
+	-webkit-transition: all .5s ;
+	-o-transition: all .5s ;
+	transition: all .5s ;
+}
+a{color: #000910}
+a:hover{text-decoration: none;}
+body{font-family: 'Roboto', Tahoma;}
+.clearfix {
+    display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+    display: block;
+}
+ 
+* html .clearfix {
+    height: 1%;
+}
+/*--------------*--Header--*--------------*/
+header.header{
+	background-color: #000910;
+	color: #fff;
+	height: 50px;
+	padding:0 100px 
+}
+header.header img{
+	padding: 0 10px;
+	float: left;
+	background-color: #fff;
+}
+header.header a{display: block}
+header.header a span{
+	float: left;
+	border-right: 2px solid #fff;
+	padding: 15px 15px 14px 20px;
+	color: #fff
+}
+header.header ul{
+	float: right;
+	margin-top:8px
+}
+header.header ul span{
+	float: left;
+	margin: 5px 8px 0 0;
+}
+header.header li{
+	display: inline-block;
+	height: 25px;
+	float: left;
+	margin-right: 8px
+}
+header.header li a{text-decoration: none;display: inline-block;}
+header.header li input, .header ul a{
+	cursor: pointer;
+	border: 1px #fff solid;
+	font-family: 'Open Sans', Tahoma;
+	font-weight:700;
+	font-size: 10pt;
+	padding: 6px 15px;
+	background-color: #fff;
+	color: #000910
+}
+header.header li a:hover{
+	background-color:#000910;
+	color:  #fff;
+}
+/*--------------*--Landing--*--------------*/
+#landing{
+	height: 300px;
+	padding: 0 100px 50px; 
+	color: #000910;
+	background-image: -ms-linear-gradient(bottom, #FFFFFF 0%, #EDEEED 200%);
+	background-image: -moz-linear-gradient(bottom, #FFFFFF 0%, #EDEEED 200%);
+	background-image: -o-linear-gradient(bottom, #FFFFFF 0%, #EDEEED 200%);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #FFFFFF), color-stop(2, #EDEEED));
+	background-image: -webkit-linear-gradient(bottom, #FFFFFF 0%, #EDEEED 200%);
+	background-image: linear-gradient(to top, #FFFFFF 0%, #EDEEED 200%);
+}
+#landing-image{
+	margin:70px 0 0;
+	float: right;
+}
+#landing-text{
+	float: left;
+	margin: 80px 0 0;
+	text-align: center;
+	font-family: 'Open Sans', Tahoma;
+}
+#landing-text h3{
+	margin:20px 0 5px 0 ;
+	line-height: 35px;
+	padding: 0;
+	font-weight: 300;
+	font-size: 40pt
+}
+#landing-text p{
+	font-size: 38pt;
+	font-weight: 800;
+	margin: 0 0 5px 0
+}
+#landing-text a{
+	border: 1px solid #000910;
+	background-color: #000910;
+	color: #fff;
+	font-size: 20pt;
+	font-weight: 600;
+	text-decoration: none;
+	padding: 5px 20px;
+}
+#landing-text a:hover{
+	background-color: #fff;
+	color: #000910}
+/*--------------*--Canvas--*--------------*/
+header.canvasHeader{
+	padding: 10px 100px;
+	background-color: #bccfff;
+	font-weight: 600;
+	font-size: 13pt;
+	text-align: center;
+	border-bottom: 3px solid #000910
+}
+header.canvasHeader input{
+	padding: 5px 20px;
+	cursor: pointer;
+	font-size: 13pt;
+	background-color: #fff;
+	color: #000910;
+	border:2px solid #fff;
+	font-family: 'Roboto', Tahoma
+}
+header.canvasHeader input:hover{
+	background-color: #000910;
+	color: #fff;
+}
+header.canvasHeader input#canvasName{
+	width: 450px;
+	padding: 7px;
+	border:1px solid #ccc;
+	cursor: auto;
+}header.canvasHeader input#canvasName{	background-color: #fff;
+	color: #000910;}
+#canvas textarea{
+	width: 85%;
+	height:65%;
+	padding: 10px;
+	color: red;
+	font-family: 'Reenie Beanie', Tahoma;
+	font-size:180%;
+	font-weight: 700;
+	resize: none;
+	margin-left: 10px;
+		-webkit-transition: all .5s ;
+	-o-transition: all .5s ;
+	transition: all .5s ;
+	border: none;
+}
+.sticky{
+	background-color:#fcf960;
+	box-shadow: 0 1px 5px #000910;}
+div#canvas{margin: auto;text-align: center;border-bottom: 3px solid #000910}
+div#lower, div#upper{overflow: hidden;text-align: left}
+div.narrow{
+	width: 19.1%;
+	border-right: 3px solid #000910;
+	float: left;
+	height: 500px;}
+div.narrow:last-child, div#lower .small:last-child{border-right:none !important}
+div.box:last-child{border:none !important;}
+div.box{height: 250px;border-bottom: 3px solid #000910;}
+div#lower .small{width: 49.8%;float: left;height: 200px;border-right: 3px solid #000910;border-top: 3px solid #000910;}
+#canvas h3{
+	font-size: 12pt;
+	margin:10px 0 10px 10px;
+}
+/*--------------*--Signing Form--*--------------*/
+#signing{
+	width: 600px;
+	text-align: center;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-ms-border-radius: 10px;
+	border: 1px solid #ccc;
+	padding: 30px 0 60px 0;
+	color: #000910;
+	font-family: 'Open Sans', Tahoma;
+	margin:30px auto;
+}
+#signing h1{
+	margin:20px 0 40px;
+	font-weight: 300
+}
+#signing input{
+	width: 400px;
+	padding: 10px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-ms-border-radius: 5px;
+	border: 1px solid #ccc;
+	font-size: 12pt;
+	margin-bottom: 10px
+}
+#signing input[type="submit"]{
+	width: 420px;
+	background-color: #000910;
+	color: #fff;
+	cursor: pointer;
+	border: 1px solid #000910
+}
+#signing input[type="submit"]:hover{
+	background-color: #fff;
+	color: #000910
+}
+#signing input[type="checkbox"]{
+	width: auto;
+	margin-right: 20px
+}
+/*--------------*--Panel--*--------------*/
+#panel{
+	width: 1000px;
+	margin:0 auto;
+}
+#panel h2{
+	font-weight: 300;
+	font-size: 22pt;
+	text-align: center;
+}
+#panel a.create{
+	background-color: #fff;
+	padding: 50px 0 40px;
+	width: 300px;
+	text-decoration: none;
+	text-align: center;
+	font-size: 15pt;
+	margin:20px auto;
+	border: 3px solid #000910;
+	border-bottom: 15px solid #000910;
+	display: block;
+	color: #000910
+}
+#panel table{
+	border-collapse: collapse;
+	margin:0 auto;
+	border: 5px solid #000910;
+	border: 5px solid #000910;
+	}
+#panel table tr{border-bottom: 5px solid #000910}
+#panel table td{
+	color: #000910;
+	background-color: #fff;
+	text-align: center;
+	border-right: 5px solid #000910;
+	padding: 20px
+}
+#panel table td.middle{
+	text-align: left;
+	width: 900px
+}
+#panel table a{
+	color: #fff
+}
+#panel a.create:hover{
+	background-color: #000910;
+	color: #fff
+}
+/*--------------*--Footer--*--------------*/
+footer.footer{
+	background-color: #000910;
+	color: #fff;
+	margin-top: 20px;
+	font-family: 'Open Sans', Tahoma;
+	padding: 20px 100px}
+footer.footer a{color: #fff}
