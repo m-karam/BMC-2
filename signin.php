@@ -17,8 +17,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 		{
 				if (isset($_POST['remember'])) 
 				{
-					setcookie("a_canvas_username", $users['username'], time()+946080000, 'http://localhost');
-					setcookie("a_canvas_password", $users['password'], time()+946080000, '/','http://localhost');
+					setcookie("a_canvas_username", $users['username'], time()+946080000, '/');
+					setcookie("a_canvas_password", $users['password'], time()+946080000, '/');
 					$_SESSION["a_canvas_username"] = $users['username'];
 					$_SESSION["a_canvas_password"] = $users['password'];
 					die("<script>location.href = 'index.php'</script>");

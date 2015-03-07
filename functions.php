@@ -102,9 +102,9 @@ function get_the_id($connection){
 			}
 		}	
 }
-function viewCanvas($id, $connection){
-	return query("SELECT * FROM `canvases` WHERE id =:id",
-	array('id'=>$id)
+function viewCanvas($param, $value, $connection, $what){
+	return query("SELECT $what FROM `canvases` WHERE $param =:value",
+	array('value'=>$value)
 	,$connection);
 }
 ?>

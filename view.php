@@ -6,7 +6,7 @@ header("Location: signin.php");
 }
 else{
 	if (isset($_GET['id'])) {
-		$contents = viewCanvas($_GET['id'], $connection);
+		$contents = viewCanvas('id', $_GET['id'], $connection, '*');
 		require "views/header.php";
 		require "views/canvas.content.php";
 		require "views/footer.php";

@@ -2,6 +2,7 @@
 	<header class="canvasHeader">
 		<label for="canvasName">Canvas name</label>
 		<input id="canvasName" placeholder="Canvas name" type="text" name="canvasName" value="<?php if(!empty($contents[0]['name'])) echo $contents[0]['name'];?>" disabled>
+		<a href="edit.php?id=<?php if(!empty($contents[0]['id']))echo $contents[0]['id'];?>">Edit</a>
 	</header>
 	<div id="canvas">
 		<div id="upper">

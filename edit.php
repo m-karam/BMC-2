@@ -6,7 +6,7 @@ header("Location: signin.php");
 }
 else{
 	if (isset($_GET['id'])) {
-		$contents = viewCanvas($_GET['id'], $connection);
+		$contents = viewCanvas('id', $_GET['id'], $connection, '*');
 	if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 		$theCanvas = new canvas;
 		$theCanvas -> name = $_POST['canvasName'];
