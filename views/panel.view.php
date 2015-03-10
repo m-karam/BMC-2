@@ -12,7 +12,7 @@ if($canvasesList)
 		}
 	}
 	else{
-		echo "You don't have canvases yet.";
+		echo "You don't have canvases yet.<br>";
 	}
 ?>
 

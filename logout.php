@@ -1,16 +1,18 @@
 <?php
 require "functions.php";
-session_start();
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
 if (is_logged_in()){	
 	if (isset($_COOKIE['a_canvas_username']) || isset($_COOKIE['a_canvas_password'])) {
-	    unset($_COOKIE['a_canvas_username']);
-	    unset($_COOKIE['a_canvas_password']);
-	    setcookie('a_canvas_username', null, -1, '/');
-	    setcookie('a_canvas_username', null, -1, '/');
-	    return true;
+	unset($_COOKIE['a_canvas_username']);
+	unset($_COOKIE['a_canvas_password']);
+	setcookie('a_canvas_username', null, 1, '/');
+	setcookie('a_canvas_username', null, 1, '/');
+	echo "successfully";
 	}
 	else {
-	    return false;
+	    echo "False";
 	}
 if (isset($_SESSION['a_canvas_username']) || isset($_SESSION['a_canvas_password'])) {
 	    unset($_SESSION['a_canvas_username']);
@@ -20,7 +22,7 @@ if (isset($_SESSION['a_canvas_username']) || isset($_SESSION['a_canvas_password'
 	    die("<script>location.href = 'index.php'</script>");
 	}
 	else {
-	    return false;
+	    echo "False";
 	}
 
 }
